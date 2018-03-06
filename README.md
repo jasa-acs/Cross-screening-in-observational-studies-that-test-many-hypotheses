@@ -1,0 +1,9 @@
+# Cross-screening in observational studies that test many hypotheses 
+
+## Authors
+
+Qingyuan Zhao, Dylan S. Small & Paul R. Rosenbaum
+
+## Abstract
+
+We discuss observational studies that test many causal hypotheses, either hypotheses about many outcomes or many treatments. To be credible an observational study that tests many causal hypotheses must demonstrate that its conclusions are neither artifacts of multiple testing nor of small biases from nonrandom treatment assignment. In a sense that needs to be defined carefully, hidden within a sensitivity analysis for nonrandom assignment is an enormous correction for multiple testing: in the absence of bias, it is extremely improbable that multiple testing alone would create an association insensitive to moderate biases. We propose a new strategy called “cross-screening,” different from but motivated by recent work of Bogomolov and Heller on replicability. Cross-screening splits the data in half at random, uses the first half to plan a study carried out on the second half, then uses the second half to plan a study carried out on the first half, and reports the more favorable conclusions of the two studies correcting using the Bonferroni inequality for having done two studies. If the two studies happen to concur, then they achieve Bogomolov-Heller replicability; however, importantly, replicability is not required for strong control of the family-wise error rate, and either study alone suffices for firm conclusions. In randomized studies with just a few null hypotheses, cross-screening is not an attractive method when compared with conventional methods of multiplicity control. However, cross-screening has substantially higher power when hundreds or thousands of hypotheses are subjected to sensitivity analyses in an observational study of moderate size. We illustrate the technique by comparing 46 biomarkers in individuals who consume large quantities of fish versus little or no fish.
