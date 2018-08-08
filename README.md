@@ -1,9 +1,62 @@
 # Cross-screening in observational studies that test many hypotheses 
 
-## Authors
+# Author Contributions Checklist Form
 
-Qingyuan Zhao, Dylan S. Small & Paul R. Rosenbaum
 
-## Abstract
+## Data
 
-We discuss observational studies that test many causal hypotheses, either hypotheses about many outcomes or many treatments. To be credible an observational study that tests many causal hypotheses must demonstrate that its conclusions are neither artifacts of multiple testing nor of small biases from nonrandom treatment assignment. In a sense that needs to be defined carefully, hidden within a sensitivity analysis for nonrandom assignment is an enormous correction for multiple testing: in the absence of bias, it is extremely improbable that multiple testing alone would create an association insensitive to moderate biases. We propose a new strategy called “cross-screening,” different from but motivated by recent work of Bogomolov and Heller on replicability. Cross-screening splits the data in half at random, uses the first half to plan a study carried out on the second half, then uses the second half to plan a study carried out on the first half, and reports the more favorable conclusions of the two studies correcting using the Bonferroni inequality for having done two studies. If the two studies happen to concur, then they achieve Bogomolov-Heller replicability; however, importantly, replicability is not required for strong control of the family-wise error rate, and either study alone suffices for firm conclusions. In randomized studies with just a few null hypotheses, cross-screening is not an attractive method when compared with conventional methods of multiplicity control. However, cross-screening has substantially higher power when hundreds or thousands of hypotheses are subjected to sensitivity analyses in an observational study of moderate size. We illustrate the technique by comparing 46 biomarkers in individuals who consume large quantities of fish versus little or no fish.
+### Abstract (Mandatory)
+We use a dataset created from the National Health and Nutrition Examination Survey
+(NHANES) 2013-2014.
+
+### Availability (Mandatory)
+The dataset is publicly available, and the subset we use is included in the R package
+CrossScreening available on CRAN.
+
+### Description (Mandatory if data available)
+NHANES is a publicly available dataset.
+
+- Link to data: https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx?BeginYear=
+- File format: The dataset we use can be directly read in R after the package is installed.
+
+## Code
+
+### Abstract (Mandatory)
+We implement the Cross-screening method described in the submitted manuscript in R.
+
+### Description (Mandatory)
+
+- How delivered: R package publicly available on CRAN.
+- Licensing information: GPL-
+- Version information: R package version 0.1.
+
+
+## Instructions for Use
+
+### Reproducibility (Mandatory)
+
+Table 1 and Table 5 can be reproduced from the CrossScreening package. After installing the
+package and loading it to R, for Table 1 run
+
+```
+example(cross.screen.fg)
+```
+
+Note that this only reproduces the Γ=9 block in the table. For other blocks, just change 9 in the
+example to other values.
+
+Table 5 can be reproduced by calling an internal function
+
+```
+CrossScreening:::table5(no.sims = 1)
+```
+
+Since Table 5 is a simulation result with 10000 simulations, it will take a long time and a lot of
+CPU resources to reproduce the entire table.
+
+### Replication (Optional)
+
+The R package can be easily used for other applications. Instructions and examples are
+provided in the package manual and vignette.
+
+
